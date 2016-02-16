@@ -1,24 +1,31 @@
 # Tttoe
 
-**TODO: Add description**
+**A simple Tic Tac Toe game developed with Elixir Language.**
 
-## Installation
+## Install and Run
 
-If [available in Hex](https://hex.pm/docs/publish), the package can be installed as:
+If you have Elixir installed correctly, you have three ways to install and run this game:
 
-  1. Add `tttoe` to your list of dependencies in `mix.exs`:
+First:
 
-    ```elixir
-    def deps do
-      [{:tttoe, "~> 0.0.1"}]
-    end
-    ```
+  ```sh
+    $ git clone https://github.com/isaacpinheiro/tttoe.git
+    $ cd tttoe/
+    $ mix compile
+  ```
+  
+Second:
 
-  2. Ensure `tttoe` is started before your application:
+  ```sh
+    $ git clone https://github.com/isaacpinheiro/tttoe.git
+    $ cd tttoe/
+    $ elixir lib/tttoe.ex
+  ```
+  
+If you done the First way, there is too a Third way to run:
 
-    ```elixir
-    def application do
-      [applications: [:tttoe]]
-    end
-    ```
-
+  ```sh
+    path/to/tttoe$ cd _build/dev/lib/tttoe/ebin/
+    path/to/tttoe/_build/dev/lib/tttoe/ebin$ iex
+    iex(1)> Tttoe.main()
+  ```
